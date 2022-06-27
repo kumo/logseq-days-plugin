@@ -1,6 +1,6 @@
 <div id="top"></div>
 <!--
-*** Thanks for checking out the {{% plugin-name %}}. If you have a suggestion
+*** Thanks for checking out the logseq-days-plugin. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -27,23 +27,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/{{% github-id %}}/{{% plugin-name %}}">
+  <a href="https://github.com/kumo/logseq-days-plugin">
     <img src="images/icon.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">{{% plugin-title %}}</h3>
+  <h3 align="center">logseq-days-plugin</h3>
 
   <p align="center">
     An awesome plugin!
     <br />
-    <a href="https://github.com/{{% github-id %}}/{{% plugin-name %}}"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kumo/logseq-days-plugin"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/{{% github-id %}}/{{% plugin-name %}}">View Demo</a>
+    <a href="https://github.com/kumo/logseq-days-plugin">View Demo</a>
     ·
-    <a href="https://github.com/{{% github-id %}}/{{% plugin-name %}}/issues">Report Bug</a>
+    <a href="https://github.com/kumo/logseq-days-plugin/issues">Report Bug</a>
     ·
-    <a href="https://github.com/{{% github-id %}}/{{% plugin-name %}}/issues">Request Feature</a>
+    <a href="https://github.com/kumo/logseq-days-plugin/issues">Request Feature</a>
   </p>
 </div>
 
@@ -68,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/{{% github-id %}}/{{% plugin-name %}}/)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/kumo/logseq-days-plugin/)
 
 Short description of the plugin goes here.
 
@@ -123,7 +123,7 @@ Short description of the plugin goes here.
 <!-- Issues -->
 ## Issues
 
-See the [open issues](https://github.com/{{% github-id %}}/{{% plugin-name %}}/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/kumo/logseq-days-plugin/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -165,24 +165,24 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-{{% plugin-owner %}} - {{% plugin-contact %}} 
+Rob Clarke - [@kumo](https://twitter.com/kumo) 
 
-Project Link: [https://github.com/{{% github-id %}}/{{% plugin-name %}}](https://github.com/{{% github-id %}}A/{{% plugin-name %}})
+Project Link: [https://github.com/kumo/logseq-days-plugin](https://github.com/kumo/logseq-days-plugin)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/{{% github-id %}}/{{% plugin-name %}}.svg?style=for-the-badge
-[contributors-url]: https://github.com/{{% github-id %}}/{{% plugin-name %}}/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/{{% github-id %}}/{{% plugin-name %}}.svg?style=for-the-badge
-[forks-url]: https://github.com/{{% github-id %}}/{{% plugin-name %}}/network/members
-[stars-shield]: https://img.shields.io/github/stars/{{% github-id %}}/{{% plugin-name %}}.svg?style=for-the-badge
-[stars-url]: https://github.com/{{% github-id %}}/{{% plugin-name %}}/stargazers
-[issues-shield]: https://img.shields.io/github/issues/{{% github-id %}}/{{% plugin-name %}}.svg?style=for-the-badge
-[issues-url]: https://github.com/{{% github-id %}}/{{% plugin-name %}}/issues
-[license-shield]: https://img.shields.io/github/license/{{% github-id %}}/{{% plugin-name %}}.svg?style=for-the-badge
-[license-url]: https://github.com/{{% github-id %}}/{{% plugin-name %}}/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/kumo/logseq-days-plugin.svg?style=for-the-badge
+[contributors-url]: https://github.com/kumo/logseq-days-plugin/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/kumo/logseq-days-plugin.svg?style=for-the-badge
+[forks-url]: https://github.com/kumo/logseq-days-plugin/network/members
+[stars-shield]: https://img.shields.io/github/stars/kumo/logseq-days-plugin.svg?style=for-the-badge
+[stars-url]: https://github.com/kumo/logseq-days-plugin/stargazers
+[issues-shield]: https://img.shields.io/github/issues/kumo/logseq-days-plugin.svg?style=for-the-badge
+[issues-url]: https://github.com/kumo/logseq-days-plugin/issues
+[license-shield]: https://img.shields.io/github/license/kumo/logseq-days-plugin.svg?style=for-the-badge
+[license-url]: https://github.com/kumo/logseq-days-plugin/blob/master/LICENSE.txt
 [product-screenshot]: ./images/screenshot.png
 [configuration-screenshot]: ./images/configuration.png

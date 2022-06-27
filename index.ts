@@ -1,7 +1,6 @@
 import '@logseq/libs';
 import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin';
 
-const pluginName = ["{{% plugin-name %}}", "{{% plugin-title %}}"]
 let settingsTemplate: SettingSchemaDesc[] = [  
   {
     key: "emoji",
@@ -20,6 +19,7 @@ async function insertSomeBlocks (e) {
   logseq.Editor.insertBlock(e.uuid, `This is block ${numberArray[number]}`, {sibling: true})}
 
   }
+const pluginName = ["logseq-days-plugin", "logseq-days-plugin"]
   
 
 const main = async () => {
