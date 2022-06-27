@@ -14,7 +14,8 @@
   "author": "Rob Clarke",
   "license": "MIT",
   "dependencies": {
-    "@logseq/libs": "0.0.1-alpha.35"
+    "@logseq/libs": "0.0.1-alpha.35",
+    "@riversun/simple-date-format": "^1.1.8"
   },
   "logseq": {
     "id": "logseq-days-plugin",

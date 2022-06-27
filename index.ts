@@ -1,35 +1,57 @@
 import '@logseq/libs';
-import { SettingSchemaDesc } from '@logseq/libs/dist/LSPlugin';
+import SimpleDateFormat from "@riversun/simple-date-format";
 
-let settingsTemplate: SettingSchemaDesc[] = [  
-  {
-    key: "emoji",
-    type: 'string',
-    default: "⏱",
-    title: "Note taking Emoji",
-    description: "Emoji printed when transcribing video",
-  }]
-
-//Inputs 5 numbered blocks when called
-async function insertSomeBlocks (e) {
-  console.log('Open the calendar!')
-  let numberArray = [1, 2, 3, 4, 5]
-  for (const number in numberArray){
-  logseq.App.showMsg("Function has been run")
-  logseq.Editor.insertBlock(e.uuid, `This is block ${numberArray[number]}`, {sibling: true})}
-
-  }
 const pluginName = ["logseq-days-plugin", "logseq-days-plugin"]
+
+async function insertDate(dow) {
+  const dayOfWeekDigit = new Date().getDay();
   
+  if (dow <= dayOfWeekDigit) {
+    dow += 7;
+  }
+
+  const difference = dow - dayOfWeekDigit;
+
+  let date = new Date();
+  date.setDate(date.getDate() + difference)
+
+  const format = (await logseq.App.getUserConfigs()).preferredDateFormat
+  const sdf = new SimpleDateFormat(format);
+
+  logseq.App.insertAtEditingCursor('[[' + sdf.format(date) + ']]')
+  logseq.App.showMsg(sdf.format(date));
+}
 
 const main = async () => {
   console.log(`Plugin: ${pluginName[1]} loaded`)
-  await logseq.useSettingsSchema(settingsTemplate)
+  
+  logseq.Editor.registerSlashCommand('Monday', async (e) => {
+    insertDate(1)
+  })
 
-  logseq.Editor.registerSlashCommand('insertBlocks', async (e) => {
-    insertSomeBlocks(e)
-  }
-    
-  )}
+  logseq.Editor.registerSlashCommand('Tuesday', async (e) => {
+    insertDate(2)
+  })
+
+  logseq.Editor.registerSlashCommand('Wednesday', async (e) => {
+    insertDate(3)
+  })
+
+  logseq.Editor.registerSlashCommand('Thursday', async (e) => {
+    insertDate(4)
+  })
+
+  logseq.Editor.registerSlashCommand('Friday', async (e) => {
+    insertDate(5)
+  })
+
+  logseq.Editor.registerSlashCommand('Saturday', async (e) => {
+    insertDate(6)
+  })
+
+  logseq.Editor.registerSlashCommand('Sunday', async (e) => {
+    insertDate(0)
+  })
+}
 
 logseq.ready(main).catch(console.error);
