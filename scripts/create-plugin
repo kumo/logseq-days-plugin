@@ -1,0 +1,55 @@
+#!/usr/bin/env bash 
+set -e
+
+## Variables
+
+github_id="QWxleA"
+plugin_owner="Alex Qwxlea"
+plugin_contact="[@QwxleaA](https:\/\/twitter.com\/QwxleaA)"
+
+GSED="/opt/homebrew/bin/gsed"
+line="---------------"
+
+TEMPLATE="$(cd "$(dirname "$0")" && cd .. && pwd )"
+## Functions
+
+checkexists() {
+    if ! command -v "$1" &> /dev/null; then
+        error "$1 could not be found, install with brew"
+    fi
+}
+
+usage() { echo "Usage: $0 [-s <45|90>] [-p <string>]" 1>&2; exit; }
+
+error() { echo "Error: $1"; exit 1; }
+
+## Start here
+
+OS=$(uname)
+if [ $OS == "Darwin" ];then
+    echo "Macos, using GNU-tools"
+    checkexists "$GSED"
+fi
+
+[ "$#" -eq 1 ] || usage
+TITLE="$1"
+NEWPROJ=$(echo "${TITLE// /-}" | tr '[:upper:]' '[:lower:]')
+
+echo "1:$TITLE 2:$NEWPROJ"
+[ -d "${TEMPLATE}" ] || error "Cannot find $TEMPLATE"
+
+git clone "${TEMPLATE}" "$NEWPROJ" 
+cd "$NEWPROJ" 
+echo "- Copied template to $NEWPROJ"
+$GSED -i "s/{{% plugin-name %}}/$NEWPROJ/g" package.json index.ts .github/workflows/publish.yml README.md
+$GSED -i "s/{{% plugin-title %}}/$TITLE/g" package.json index.ts .github/workflows/publish.yml README.md
+$GSED -i "s/{{% github-id %}}/$github_id/g" package.json index.ts .github/workflows/publish.yml README.md
+$GSED -i "s/{{% plugin-owner %}}/$plugin_owner/g" package.json index.ts .github/workflows/publish.yml README.md
+$GSED -i "s/{{% plugin-contact %}}/$plugin_contact/g" package.json index.ts .github/workflows/publish.yml README.md
+rm -rf "${TEMPLATE}/scripts"
+echo $line
+echo "Now replace: images/icon.png"
+echo "Now replace: images/screenshot.png"
+echo "Now replace: images/settings.png"
+echo $line
+echo "run: make step2"
