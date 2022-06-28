@@ -23,6 +23,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
+> If this plugin helps you, I would be grateful for your support. You can [buy me a coffee](https://www.buymeacoffee.com/kumo77) here.
+
 
 <!-- PROJECT LOGO -->
 <br />
@@ -34,7 +36,7 @@
   <h3 align="center">logseq-days-plugin</h3>
 
   <p align="center">
-    An awesome plugin!
+    Quickly link to a day of the week
     <br />
     <a href="https://github.com/kumo/logseq-days-plugin"><strong>Explore the docs »</strong></a>
     <br />
@@ -54,7 +56,6 @@
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#configuration">Configuration</a></li>
     <li><a href="#using-the-plugin">Using the plugin</a></li>
     <li><a href="#issues">Issues</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -70,7 +71,8 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/kumo/logseq-days-plugin/)
 
-Short description of the plugin goes here.
+I often use the **/Today**, **/Tomorrow**, and **/Yesterday** commands, but sometimes I want to write **/Wednesday**, or **/Saturday** to refer to a specific day in the next 7 days.  This plugin adds commands for the seven days of the week, and typing a day will add a link to the next one.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -85,10 +87,8 @@ Short description of the plugin goes here.
 - Restart the application.
 - Click 3 dots and go to Plugins (or `Esc t p`).
 
-### Install plugin from the Marketplace (recommended) 
+### Install plugin from the Marketplace (not available yet) 
 
-- Click the `Marketplace` button and then click `Plugins`.
-- Find the plugin and click `Install`.
 
 ### Install plugin manually
 
@@ -101,21 +101,12 @@ Short description of the plugin goes here.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-<!-- Configuration -->
-## Configuration
-
-- Click the 3 dots in the righthand corner and go to **Settings**.
-- Go to **Plugin Settings**.
-- Select correct plugin.
-
-[![Configuration screen][configuration-screenshot]](##configuration)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 <!-- describe how to use the plugin -->
 ## Using the plugin
+
+This plugin adds 7 commands, 1 for each day of the week. If today is Monday, then typing **/Friday** will add a link for this Friday, and typing **/Monday** will add a link to next Monday.
+
+The formatting of the date comes from your Logseq settings, but it is only in English, for now.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -154,9 +145,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ### Image license
 
-### Font License
-
-[OFL](./OFL.txt)
+Icon: <a href="https://www.flaticon.com/free-icons/planner" title="planner icons">Planner icons created by Freepik - Flaticon</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -184,5 +173,4 @@ Project Link: [https://github.com/kumo/logseq-days-plugin](https://github.com/ku
 [issues-url]: https://github.com/kumo/logseq-days-plugin/issues
 [license-shield]: https://img.shields.io/github/license/kumo/logseq-days-plugin.svg?style=for-the-badge
 [license-url]: https://github.com/kumo/logseq-days-plugin/blob/master/LICENSE.txt
-[product-screenshot]: ./images/screenshot.png
-[configuration-screenshot]: ./images/configuration.png
+[product-screenshot]: ./images/screenshot.gif
