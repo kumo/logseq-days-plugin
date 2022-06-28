@@ -19,7 +19,6 @@ async function insertDate(dow) {
   const sdf = new SimpleDateFormat(format);
 
   logseq.App.insertAtEditingCursor('[[' + sdf.format(date) + ']]')
-  logseq.App.showMsg(sdf.format(date));
 }
 
 const main = async () => {
