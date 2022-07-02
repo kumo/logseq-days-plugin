@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
+    "dayjs": "^1.11.3",
     "jest": "^28.1.2",
     "parcel": "^2.0.0",
     "ts-jest": "^28.0.5"
