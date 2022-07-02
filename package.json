@@ -7,7 +7,7 @@
     "main": false
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "parcel build --no-source-maps index.html --public-url ./"
   },
   "keywords": [],
@@ -23,6 +23,9 @@
     "icon": "./images/icon.png"
   },
   "devDependencies": {
-    "parcel": "^2.0.0"
+    "@types/jest": "^28.1.4",
+    "jest": "^28.1.2",
+    "parcel": "^2.0.0",
+    "ts-jest": "^28.0.5"
   }
 }
