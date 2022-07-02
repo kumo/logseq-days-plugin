@@ -28,3 +28,6 @@ build: ## Build package
 
 install: ## Install plugin dependencies
 	npm install
+
+test: ## Run tests
+	npm test
