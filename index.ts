@@ -1,5 +1,5 @@
 import '@logseq/libs';
-import SimpleDateFormat from "@riversun/simple-date-format";
+import { transformDate } from './lib'
 
 const pluginName = ["logseq-days-plugin", "logseq-days-plugin"]
 
@@ -16,9 +16,8 @@ async function insertDate(dow) {
   date.setDate(date.getDate() + difference)
 
   const format = (await logseq.App.getUserConfigs()).preferredDateFormat
-  const sdf = new SimpleDateFormat(format);
 
-  logseq.App.insertAtEditingCursor('[[' + sdf.format(date) + ']]')
+  logseq.App.insertAtEditingCursor('[[' + transformDate(date, format) + ']]')
 }
 
 const main = async () => {

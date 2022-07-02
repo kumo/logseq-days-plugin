@@ -15,7 +15,7 @@
   "license": "MIT",
   "dependencies": {
     "@logseq/libs": "0.0.1-alpha.35",
-    "@riversun/simple-date-format": "^1.1.8"
+    "dayjs": "^1.11.3"
   },
   "logseq": {
     "id": "logseq-days-plugin",
@@ -24,7 +24,6 @@
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
-    "dayjs": "^1.11.3",
     "jest": "^28.1.2",
     "parcel": "^2.0.0",
     "ts-jest": "^28.0.5"
